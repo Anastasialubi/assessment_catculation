@@ -1,5 +1,5 @@
 [System]
-Name='V1.0.1'
+Name='Fix V1.0.2'
 Type='mamdani'
 Version=2.0
 NumInputs=4
@@ -15,51 +15,51 @@ DefuzzMethod='centroid'
 Name='Ликвидность/платежеспособность'
 Range=[0 1]
 NumMFs=5
-MF1='EL':'trapmf',[0 0 0.1 0.2]
-MF2='L':'trapmf',[0 0.25 0.35 0.45]
-MF3='M':'trapmf',[0.35 0.45 0.55 0.65]
-MF4='H':'trapmf',[0.55 0.65 0.75 0.85]
-MF5='EH':'trapmf',[0.75 0.85 1 1]
+MF1='EL':'gaussmf',[0.07729 0.059]
+MF2='L':'gaussmf',[0.0964 0.2865]
+MF3='M':'gaussmf',[0.08493 0.5]
+MF4='H':'gaussmf',[0.08493 0.7]
+MF5='EH':'gaussmf',[0.07134 0.916]
 
 [Input2]
 Name='Финансовая__устойчивость'
 Range=[0 1]
 NumMFs=5
-MF1='EL':'trapmf',[0 0 0.1 0.2]
-MF2='L':'trapmf',[0 0.25 0.35 0.45]
-MF3='M':'trapmf',[0.35 0.45 0.55 0.65]
-MF4='H':'trapmf',[0.55 0.65 0.75 0.85]
-MF5='EH':'trapmf',[0.75 0.85 1 1]
+MF1='EL':'gaussmf',[0.07729 0.059]
+MF2='L':'gaussmf',[0.0964 0.2865]
+MF3='M':'gaussmf',[0.08493 0.5]
+MF4='H':'gaussmf',[0.08493 0.7]
+MF5='EH':'gaussmf',[0.07138 0.9139]
 
 [Input3]
 Name='Деловая__активность'
 Range=[0 1]
 NumMFs=5
-MF1='EL':'trapmf',[0 0 0.1 0.2]
-MF2='L':'trapmf',[0 0.25 0.35 0.45]
-MF3='M':'trapmf',[0.35 0.45 0.55 0.65]
-MF4='H':'trapmf',[0.55 0.65 0.75 0.85]
-MF5='EH':'trapmf',[0.75 0.85 1 1]
+MF1='EL':'gaussmf',[0.07729 0.059]
+MF2='L':'gaussmf',[0.0964 0.2865]
+MF3='M':'gaussmf',[0.08493 0.5]
+MF4='H':'gaussmf',[0.08493 0.7]
+MF5='EH':'gaussmf',[0.07134 0.916]
 
 [Input4]
 Name='Рентабельность'
 Range=[0 1]
 NumMFs=5
-MF1='EL':'trapmf',[0 0 0.1 0.2]
-MF2='L':'trapmf',[0 0.25 0.35 0.45]
-MF3='M':'trapmf',[0.35 0.45 0.55 0.65]
-MF4='H':'trapmf',[0.55 0.65 0.75 0.85]
-MF5='EH':'trapmf',[0.75 0.85 1 1]
+MF1='EL':'gaussmf',[0.07729 0.059]
+MF2='L':'gaussmf',[0.0964 0.2865]
+MF3='M':'gaussmf',[0.08493 0.5]
+MF4='H':'gaussmf',[0.08493 0.7]
+MF5='EH':'gaussmf',[0.07134 0.916]
 
 [Output1]
 Name='Общая__оценка'
 Range=[0 1]
 NumMFs=5
-MF1='EL':'trapmf',[0 0 0.1 0.2]
-MF2='L':'trapmf',[0 0.25 0.35 0.45]
-MF3='M':'trapmf',[0.35 0.45 0.55 0.65]
-MF4='H':'trapmf',[0.55 0.65 0.75 0.85]
-MF5='EH':'trapmf',[0.75 0.85 1 1]
+MF1='EL':'gaussmf',[0.07729 0.059]
+MF2='L':'gaussmf',[0.0964 0.2844]
+MF3='M':'gaussmf',[0.08493 0.5]
+MF4='H':'gaussmf',[0.08493 0.7]
+MF5='EH':'gaussmf',[0.07134 0.916]
 
 [Rules]
 1 1 1 1, 1 (1) : 1
